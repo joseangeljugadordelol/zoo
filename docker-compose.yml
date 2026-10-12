@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mysql:8
+    container_name: sql_server_container
+    environment:
+      MYSQL_ROOT_PASSWORD: joseANGEL%%%).
+      MYSQL_DATABASE: zoodb
+    ports:
+      - "9999:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
