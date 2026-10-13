@@ -6,36 +6,39 @@
   <title>Zoo</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
+
 <body>
-  <main>
-    <h1>Zoo</h1>
-    <p class="sub">Registra un animal con su nombre, raza y comida.</p>
+  <div class="contenedor1">
+    <main>
+      <h1>Zoo</h1>
+      <p class="sub">Registra un animal con su nombre, raza y comida.</p>
 
-    <form id="form-animal">
-      <label>Nombre
-        <input type="text" id="nombre" maxlength="45" required>
-      </label>
-      <label>Raza
-        <input type="text" id="raza" maxlength="45" required>
-      </label>
-      <label>Comida
-        <input type="text" id="comida" maxlength="45" required>
-      </label>
-      <button type="submit" id="btn-guardar">Guardar animal</button>
-    </form>
-    <p id="mensaje" role="status"></p>
+      <form id="form-animal">
+        <label>Nombre
+          <input type="text" id="nombre" maxlength="45" required>
+        </label>
+        <label>Raza
+          <input type="text" id="raza" maxlength="45" required>
+        </label>
+        <label>Comida
+          <input type="text" id="comida" maxlength="45" required>
+        </label>
+        <button type="submit" id="btn-guardar">Guardar animal</button>
+      </form>
+      <p id="mensaje" role="status"></p>
 
-    <h2>Animales registrados</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Nombre</th><th>Raza</th><th>Comida</th></tr>
-        </thead>
-        <tbody id="tabla-animales"></tbody>
-      </table>
-    </div>
-  </main>
+      <h2>Animales registrados</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Nombre</th><th>Raza</th><th>Comida</th></tr>
+          </thead>
+          <tbody id="tabla-animales"></tbody>
+        </table>
+      </div>
+    </main>
 
-  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </div>
 </body>
 </html>
