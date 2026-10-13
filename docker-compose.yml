@@ -3,7 +3,7 @@ services:
     image: mysql:8
     container_name: sql_server_container
     environment:
-      MYSQL_ROOT_PASSWORD: joseANGEL%%%).
+      MYSQL_ROOT_PASSWORD: 64571ok.
       MYSQL_DATABASE: zoodb
     ports:
       - "9999:3306"
